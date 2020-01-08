@@ -1,0 +1,18 @@
+{extends file="template_inheritance.html"}
+
+{block name=title}Question List{/block}
+
+{block name=body}
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Submision Timp</th>
+            <th>View Nubmer</th>
+            <th>Vote Number</th>
+            <th>Title</th>
+            <th>Message</th>
+            <th>Image</th>
+        </tr>
+        {{ question_data }}
+    </table>
+{body}
