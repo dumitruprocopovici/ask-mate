@@ -189,4 +189,28 @@ body {
 
 }
 
+.add-div{
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    width: content-box;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    font-weight: lighter;
+    color: #C77600;
+    font-size: 25px;
+}
 
+
+.add-button {
+    width: content-box;
+    height: content-box;
+    position: relative;
+    color: white;
+    background-color: #C77600;
+    border: 1px solid #C77600;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 3%;
+}
