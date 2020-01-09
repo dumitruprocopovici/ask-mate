@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} Default Page Title {% endblock %}</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <h1><a href="/">Home</a></h1>
+            </th>
+            <th>
+                <h1><a href="/question_list/">Question List</a></h1>
+            </th>
+            <th>
+                <h1><a href="/question_list/add">Add Question</a></h1>
+            </th>
+        </tr>
+    </table>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

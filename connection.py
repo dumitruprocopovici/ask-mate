@@ -5,5 +5,5 @@ def read_question():
         csv_reader = csv.reader(csv_file, delimiter = ',', quotechar = '"')
         list_to_return = []
         for row in csv_reader:
-            list_to_return.append(temp_list)
-        return list_to_return
+            list_to_return.append(row)
+        return list_to_return[1:]

@@ -1,11 +1,12 @@
-{extends file="template_inheritance.html"}
+{% extends "layout.html" %}
 
-{block name=title}Home{/block}
+{% block title %} Home {% endblock %}
 
-{block name=body}
+{% block body %}
     <p>
         <h3> Procopovici Dumitru</h3><br>
         <h3> Adrian Nechifor</h3><br>
         <h3> Florin Ciocirlan</h3><br>
         <h3> Andreea Grosu</h3>
-{/block}
+    </p>
+{% endblock %}

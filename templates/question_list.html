@@ -1,18 +1,24 @@
-{extends file="template_inheritance.html"}
+{% extends "layout.html" %}
 
-{block name=title}Question List{/block}
+{% block title %} Question List {% endblock %}
 
-{block name=body}
-    <table>
+{% block body %}
+    <table border="3">
         <tr>
-            <th>ID</th>
-            <th>Submision Timp</th>
-            <th>View Nubmer</th>
-            <th>Vote Number</th>
-            <th>Title</th>
-            <th>Message</th>
-            <th>Image</th>
+            <th style="text-align: center">ID</th>
+            <th style="text-align: center">Submision Timp</th>
+            <th style="text-align: center">View Nubmer</th>
+            <th style="text-align: center">Vote Number</th>
+            <th style="text-align: center">Title</th>
+            <th style="text-align: center">Message</th>
+            <th style="text-align: center">Edit</th>
         </tr>
-        {{ question_data }}
+        {% for i in question_data %}
+            <tr>
+                {% for j in i %}
+                <td style="text-align: center"> {{ j }} </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
     </table>
-{body}
+{% endblock %}
