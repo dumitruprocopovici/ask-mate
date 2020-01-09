@@ -1,7 +1,7 @@
 import csv
 
 def read_question():
-    with open('sample_data/question.csv', mode='r') as csv_file:
+    with open("sample_data/question.csv", "r") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter = ',', quotechar = '"')
         list_to_return = []
         for row in csv_reader:

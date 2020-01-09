@@ -1,11 +1,12 @@
 {% extends "layout.html" %}
-
 {% block title %} Add a question {% endblock %}
 
 {% block body %}
+<div class = "add-div">
 <form action="/question_list/add/" method="POST">
-    <h2> Title: </h2> <textarea name="Title" rows="1" cols="50"></textarea>
-    <h2>Message:</h2> <textarea name="Message" rows="5" cols="50"></textarea><br>
-    <button type="submit">Add</button>
+    <p class="add-title"> Title: </p> <textarea name="Title" rows="1" cols="50" class ="text-area"></textarea>
+    <p class="add-message">Message:</p> <textarea name="Message" rows="5" cols="50" class ="text-area"></textarea><br>
+    <button type="submit" class="add-button">Add</button>
 </form>
+</div>
 {% endblock %}

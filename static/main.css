@@ -20,6 +20,7 @@ body {
 .menu-nav{
     position: relative;
     margin-top: 10%;
+    margin-bottom: 5%;
     background-color: #237364;
     border: 1px solid rgba(35, 108, 93, 0.85);
     width: 300px;
@@ -66,8 +67,16 @@ body {
 }
 
 .team-mates {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
     font-family: "Audiowide", cursive;
     color: #c77600;
+    height: fit-content;
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    justify-content: right;
+    justify-items: flex-end;
 }
 
 .f1-name {
@@ -123,11 +132,12 @@ body {
     }
 
     to {
-        position: absolute;
+        position: relative;
         font-size: 20px;
-        left:60%;
-        top: 25%;
-        transform: rotate(360deg);
+        left: 0%;
+        transform: rotate(720deg);
+        align-self: center;
+        margin: 5%;
     }
 
 }
@@ -138,15 +148,15 @@ body {
         font-size: 7px;
         left:-100%;
         bottom: -100%;
-        transform: rotate(0deg);
+        transform: rotate(860deg);
     }
 
     to {
-        position: absolute;
+        position: relative;
         font-size: 20px;
-        left:25%;
-        top: 25%;
-        transform: rotate(360deg);
+        left: 0%;
+        transform: rotate(0deg);
+        margin: 5%;
     }
 
 }
@@ -161,11 +171,11 @@ body {
     }
 
     to {
-        position: absolute;
+        position: relative;
         font-size: 20px;
-        left:25%;
-        top: 45%;
-        transform: rotate(360deg);
+        left: 0%;
+        transform: rotate(1080deg);
+        margin: 5%;
     }
 
 }
@@ -176,17 +186,53 @@ body {
         font-size: 7px;
         left:-100%;
         bottom:-100%;
-        transform: rotate(0deg);
+        transform: rotate(860deg);
     }
 
     to {
-        position: absolute;
+        position: relative;
         font-size: 20px;
-        left:60%;
-        top:45%;
-        transform: rotate(360deg);
+        left: 0%;
+        transform: rotate(0deg);
+        margin: 5%;
     }
 
 }
 
+span {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
 
+.add-div{
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    width: content-box;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    font-weight: lighter;
+    color: #C77600;
+    font-size: 25px;
+}
+
+
+.add-button {
+    width: content-box;
+    height: content-box;
+    position: relative;
+    color: rgb(44, 44, 44);
+    background-color: #C77600;
+    border: 1px solid #C77600;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 3%;
+    font-family: 'Baloo', cursive;
+    font-weight: lighter;
+}
+
+.text-area {
+    background-color: #237364;
+}
