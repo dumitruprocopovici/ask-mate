@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,19 +9,13 @@
     <title>{% block title %} Default Page Title {% endblock %}</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>
-                <h1><a href="/">Home</a></h1>
-            </th>
-            <th>
-                <h1><a href="/question_list/">Question List</a></h1>
-            </th>
-            <th>
-                <h1><a href="/question_list/add">Add Question</a></h1>
-            </th>
-        </tr>
-    </table>
+    <div class = "div-nav">
+    <nav class = "menu-nav">
+            <a class ="nav-title" id ="home" href="/">Home</a>
+            <a class ="nav-title" id ="question" href="/question_list/">Question List</a>
+            <a class ="nav-title" id = "add-q" href="/question_list/add">Add Question</a>
+    </nav>
+    </div>
     {% block body %}
     {% endblock %}
 </body>

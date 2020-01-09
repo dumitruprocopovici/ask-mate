@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Baloo&display=swap');
+
+body {
+    background-color: rgb(44, 44, 44);
+
+}
+
+
+.div-nav{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding-left: 37%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.menu-nav{
+    position: relative;
+    margin-top: 10%;
+    background-color: #237364;
+    border: 1px solid rgba(35, 108, 93, 0.85);
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-title{
+    position: relative;
+    color: #c77b2e;
+    font-family: 'Baloo', cursive;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+
+}
+
+#home:hover {
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    max-width: border-box;
+
+}
+
+#question:hover {
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    max-width: border-box;
+
+}
+
+#add-q:hover{
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    max-width: border-box;
+
+}
+
+.team-mates {
+    font-family: "Audiowide", cursive;
+    color: #c77600;
+}
+
+.f1-name {
+    animation: rotation-name1 3s 1 forwards,
+                opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+.f2-name {
+    animation: rotation-name2 3s 1 3s forwards,
+                opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+.f3-name {
+    animation: rotation-name3 3s 1 6s forwards,
+                opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+.f4-name {
+    animation: rotation-name4 3s 1 9s forwards,
+               opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes rotation-name1 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom: -100%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        position: absolute;
+        font-size: 20px;
+        left:60%;
+        top: 25%;
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes rotation-name2 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom: -100%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        position: absolute;
+        font-size: 20px;
+        left:25%;
+        top: 25%;
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes rotation-name3 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom: -100%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        position: absolute;
+        font-size: 20px;
+        left:25%;
+        top: 45%;
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes rotation-name4 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom:-100%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        position: absolute;
+        font-size: 20px;
+        left:60%;
+        top:45%;
+        transform: rotate(360deg);
+    }
+
+}
+
+
