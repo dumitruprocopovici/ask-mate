@@ -7,3 +7,13 @@ def read_question():
         for row in csv_reader:
             list_to_return.append(row)
         return list_to_return[1:]
+
+def write_question(matrix_of_questions):
+    new_matrix_of_questions = []
+    new_matrix_of_questions.append([['id','submission_time','view_number','vote_number','title','message','image']])
+    for i in matrix_of_questions:
+        new_matrix_of_questions.append(i)
+    with open('sample_data/question.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        for i in new_matrix_of_questions:
+            writer.writerow(i)

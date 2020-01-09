@@ -1,1 +1,8 @@
-{{question_id}}
+{% extends "layout.html" %}
+
+{% block title %} Question {{ question[0] }} {% endblock %}
+
+{% block body %}
+    <h1> Title: {{ question[4] }}</h1>
+    <p style="font-size:160%;" > {{question [5]}} </p>
+{% endblock %}

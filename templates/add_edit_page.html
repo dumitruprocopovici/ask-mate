@@ -3,5 +3,9 @@
 {% block title %} Add a question {% endblock %}
 
 {% block body %}
-
+<form action="/question_list/add/" method="POST">
+    <h2> Title: </h2> <textarea name="Title" rows="1" cols="50"></textarea>
+    <h2>Message:</h2> <textarea name="Message" rows="5" cols="50"></textarea><br>
+    <button type="submit">Add</button>
+</form>
 {% endblock %}
